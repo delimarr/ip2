@@ -21,13 +21,15 @@ class Edge:
 class Map:
     def __init__(self):
         self.id = 'mapExample' 
+        self.nodes = []
+        self.edges = []
 
     def initMap(self):
         #make Nodes and Edges from the map and set their attributes
         return
 
     def getPosition(self, ina):
-        #measures the current and gives the appropriate position back$
+        #measures the current and gives the appropriate position back
         #ina.current()
         return "Node"
 
@@ -36,7 +38,7 @@ class Player:
     def __init__(self):
         self.name = "Player1"
         self.score = 0
-        self.position = 0
+        self.position = None 
         self.map = 'map'
         self.path = []
 
@@ -44,11 +46,11 @@ class Player:
         #calculates and sets the score
         return
 
-    def publicScore(self):
-        #send Score and Playername to the FHNW Dashboard 
+    def publicScore(self): #unitest
+        #send Score and Playername to the FHNW Dashboard and Display
         return
 
-    def setName(self):
+    def setName(self): #unitest
         #prompt PlayerName and set
         return
 
@@ -67,14 +69,14 @@ class Player:
         self.map.initMap() 
         return
 
-    def isGameFinished(self):
+    def isGameFinished(self): #unitest
         return False
 
     def step(self):
         #move the player from nodeA to nodeB and update player
         return
 
-    def isNewPosValid(self, newPosition):
+    def isNewPosValid(self, newPosition): #unitest
         #returns true if the newPosition is a valid move from the current Position
         return True
 
