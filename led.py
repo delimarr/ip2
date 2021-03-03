@@ -14,17 +14,18 @@ class Led():
     def configure(self, pixelCount = 56):        
         self.pixels = Adafruit_WS2801.WS2801Pixels(pixelCount, clk = self.pixelClock, do = self.pixelDout)
         
-    def fill(self, r = 0, g = 0, b = 0):
+    def fill(self, red = 0, green = 0, blue = 0):
         self.pixels.clear()
         for i in range(self.pixelCount):
-            self.pixels.set_pixel_rgb(i, r, g, b)
+            self.pixels.set_pixel_rgb(i, red, green, blue)
         self.pixels.show()
         
-    def light(self, p = 0, r = 0, g = 0, b = 0):
-        self.pixels.set_pixel_rgb(p, r, g, b)
+    def light(self, pos = 0, red = 0, green = 0, blue = 0):
+        self.pixels.set_pixel_rgb(pos, red, green, blue)
         self.pixels.show()
 
     def lightMap(player):
+        #TODO
         return
 
 '''    def blink(self):

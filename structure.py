@@ -16,7 +16,7 @@ class Edge:
         self.visits = 0
 
     def incrementVisits(self):
-        self.visits =+ 1
+        self.visits += 1
         
 class Map:
     def __init__(self):
@@ -85,6 +85,9 @@ def getMap():
 
 def restart():
     return;
+
+def exit():
+    return
 
 def run(ina, led):
     player = Player()
