@@ -1,9 +1,9 @@
 # author:
 # General conventions:
 #       - functions, variables: firstLetterLowerCase
-#       - class: FirstLetterCapital
+#       - class: FirstLetterCapital 
 #       - constant: CAPITAL
-#############################################################################
+############################################################################
 
 '''
 Doc: your remarks, ideas
