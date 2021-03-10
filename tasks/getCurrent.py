@@ -1,4 +1,4 @@
-# author:
+# author: Vural Erdem
 # General conventions:
 #       - functions, variables: firstLetterLowerCase
 #       - class: FirstLetterCapital
