@@ -9,7 +9,7 @@
 Doc: your remarks, ideas
 '''
 
-#This is a test
+
 
 from ina219 import INA219
 import time
