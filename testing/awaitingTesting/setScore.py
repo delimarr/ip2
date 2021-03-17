@@ -1,4 +1,4 @@
-# author:
+# author: Anja
 # General conventions:
 #       - functions, variables: firstLetterLowerCase
 #       - class: FirstLetterCapital
@@ -14,4 +14,6 @@ Doc: your remarks, ideas
 
 def setScore(self):
     #TODO: calculates the score from path the player walked 
-    return
+
+    for edge in self.path:
+        self.score += edge.length
