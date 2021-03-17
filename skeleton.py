@@ -43,15 +43,14 @@ class Map:
         
 class Player:
     def __init__(self):
-        self.name = "Player1"
+        self.name = "Player"
         self.score = 0
         self.position = None 
-        self.map = None #matrice
+        self.map = None #contains Map object
         self.path = [] #contains all visited edges
 
     def makeMap(self):
         self.map = Map()
-        self.id = getMap()
         self.map.initMap() 
         return
 
@@ -154,3 +153,4 @@ def main():
 
 if __name__=="__main__":
     main()
+    
