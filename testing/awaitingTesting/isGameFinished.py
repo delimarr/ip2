@@ -14,4 +14,11 @@ Doc: your remarks, ideas
 
 def isGameFinished(self):
     
-    return #boolean
+    for edge in self.map.edges:
+        if(edge.visits == 0):
+            return False
+    return True    
+            
+         
+          
+    
